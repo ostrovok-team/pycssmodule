@@ -1,0 +1,3 @@
+[submodule "pycssmodule/cssmodule"]
+	path = pycssmodule/cssmodule
+	url = git@github.com:4u/cssmodule.git
