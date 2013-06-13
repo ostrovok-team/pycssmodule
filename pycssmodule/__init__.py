@@ -1,7 +1,7 @@
 import os.path
 from subprocess import check_call
 
-def compile(module, js_ns_prefix, source_folder, target_folder, production_source_folder):
+def compile(js_ns_prefix, source_folder, target_folder, production_source_folder):
     cdir = os.path.abspath(os.path.dirname(__file__))
     cssmoduledir = os.path.join(cdir, 'cssmodule/bin/cssmoduledir')
 
