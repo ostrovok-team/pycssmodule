@@ -22,7 +22,7 @@ class do_develop(develop):
 
 setup(
     cmdclass={'develop': do_develop,},
-    name='pygcin',
+    name='pycssmodule',
     version='0.11',
     packages=['pycssmodule'],
     package_dir={'pycssmodule': '.'},
