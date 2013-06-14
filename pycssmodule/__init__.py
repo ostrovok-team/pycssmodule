@@ -1,5 +1,12 @@
-import os.path
+import os
+import shutil
 from subprocess import check_call
+
+def install(target_dir):
+    source_dir = os.path.abspath(os.path.dirname(__file__))
+    source_dir = os.path.join(source_dir, 'cssmodule/client')
+    shutil.rmtree(target_dir, ignore_errors=True)
+    shutil.copytree(source_dir, target_dir)
 
 def compile(js_ns_prefix, source_folder, target_folder, production_source_folder):
     cdir = os.path.abspath(os.path.dirname(__file__))
